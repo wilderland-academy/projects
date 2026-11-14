@@ -159,8 +159,32 @@ textarea.copybox{width:100%;min-height:120px;font:inherit;font-size:14px;border:
 .toast.show{transform:translate(-50%,0)}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 
+.sbtns{display:flex;flex-direction:column;gap:6px;flex:none}
+.go{min-height:36px;padding:4px 12px;border-radius:999px;border:2px solid var(--strong);background:var(--strong);color:var(--on-strong);font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
+.go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.packitem .go{align-self:flex-start}
+.sparkq{font-size:19px;font-weight:600;line-height:1.35;color:var(--ink)}
+.steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;color:var(--body)}
+.steps b{color:var(--ink)}
+.coach{gap:8px}
+.coach .warn{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blaze);border-radius:8px;padding:9px 11px;font-size:14px}
+.form{display:flex;flex-direction:column;gap:3px}
+.form label,.plabel{font-size:14px;font-weight:700;color:var(--ink);margin-top:6px}
+.form input{font:inherit;font-size:15px;min-height:40px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);width:100%}
+.form input::placeholder{color:var(--muted);opacity:.85}
+.form input:focus,.prompt:focus{outline:2px solid var(--strong);outline-offset:1px}
+.copybox.prompt{min-height:230px;font-size:13.5px;line-height:1.45;resize:vertical}
+.more summary{cursor:pointer;font-weight:700;color:var(--strong);padding:6px 0}
+.fprompt{display:flex;flex-direction:column;gap:3px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line)}
+.fprompt p{font-size:14px;color:var(--body)}
+.res{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.res li{display:flex;flex-direction:column;gap:1px}
+.res a{font-weight:700;color:var(--water);text-underline-offset:3px}
+.res span{font-size:14px;color:var(--muted)}
+.panel.xl{width:min(560px,52%)}
 @media (max-width:860px){
   .mark svg{width:112px}
+  .panel.xl{width:auto;max-height:88%}
   .brand{flex:0 0 auto;margin-right:0;order:1}
   .brand h1{font-size:19px}
   .school{display:none}
@@ -1662,6 +1686,60 @@ var LAND=[[[[-59.6,-80],[-59.9,-80.5],[-60.2,-81],[-62.3,-80.9],[-64.5,-80.9],[-
 
 var IMG={"afghan": {"f": "img/afghan.jpg", "alt": "A student-built competition robot", "a": "Noah Wulf", "u": "https://commons.wikimedia.org/wiki/File:VEX_Robotics_Competition_Robot_with_Cap.jpg", "l": "CC BY-SA 4.0"}, "alexscott": {"f": "img/alexscott.jpg", "alt": "Drawing of a lemonade stand", "a": "FormalDude", "u": "https://commons.wikimedia.org/wiki/File:Lemonade_Stand_clipart_icon.png", "l": "CC BY-SA 4.0"}, "alma": {"f": "img/alma.jpg", "alt": "Inside the old Metropolitan Opera House, New York", "a": "Unknown photographer", "u": "https://commons.wikimedia.org/wiki/File:Metropolitan_Opera_House,_a_concert_by_pianist_Josef_Hofmann_-_NARA_541890_-_Edit.jpg", "l": "Public domain"}, "amal": {"f": "img/amal.jpg", "alt": "Little Amal, a 3.5 m puppet of a young refugee girl, on her walk", "a": "Storye book", "u": "https://commons.wikimedia.org/wiki/File:Little_Amal_at_Barnsley_30_October_2021_(46).JPG", "l": "CC BY-SA 4.0"}, "anatsui": {"f": "img/anatsui.jpg", "alt": "Close-up of an El Anatsui sculpture made from bottle caps", "a": "hahnchen", "u": "https://commons.wikimedia.org/wiki/File:El_Anatsui_-_Man%27s_Cloth_(close_up).jpg", "l": "CC BY-SA 3.0"}, "annefrank": {"f": "img/annefrank.jpg", "alt": "The Anne Frank House on the Prinsengracht canal, Amsterdam", "a": "Dietmar Rabich", "u": "https://commons.wikimedia.org/wiki/File:Amsterdam_(NL),_Anne-Frank-Huis_--_2015_--_7185.jpg", "l": "CC BY-SA 4.0"}, "anning": {"f": "img/anning.jpg", "alt": "Ichthyosaur fossils at the Natural History Museum, London", "a": "Sourabh.biswas003", "u": "https://commons.wikimedia.org/wiki/File:PXL_20231218_111916909_Natural_History_Museum_Exhibits_16_Marine_reptile_Ichthyosaur_fossil.jpg", "l": "CC BY-SA 4.0"}, "at": {"f": "img/at.jpg", "alt": "A white blaze marks the Appalachian Trail in winter", "a": "ShenandoahNPS", "u": "https://commons.wikimedia.org/wiki/File:Appalachian_Trail_Blaze_(50907882988).jpg", "l": "Public domain"}, "baird": {"f": "img/baird.jpg", "alt": "Title page of a 1663 Bible in the Wampanoag (Massachusett) language", "a": "John Eliot (1663)", "u": "https://commons.wikimedia.org/wiki/File:Up-Biblum_Bible_1663.jpg", "l": "Public domain"}, "ban": {"f": "img/ban.jpg", "alt": "Roof of the Cardboard Cathedral, Christchurch", "a": "Michal Klajban", "u": "https://commons.wikimedia.org/wiki/File:Roof_detail_of_Cardboard_Cathedral,_Christchurch,_New_Zealand.jpg", "l": "CC BY-SA 4.0"}, "beforeidie": {"f": "img/beforeidie.jpg", "alt": "A \"Before I die\" wall in San Diego", "a": "Tony Webster from Portland, Oregon, United States", "u": "https://commons.wikimedia.org/wiki/File:Hillcrest_%E2%80%98Before_I_Die%E2%80%99_wall_(15854595507).jpg", "l": "CC BY 2.0"}, "bekele": {"f": "img/bekele.jpg", "alt": "Bars of handmade soap", "a": "Bernard Gagnon", "u": "https://commons.wikimedia.org/wiki/File:Aleppo_soap_01.jpg", "l": "CC BY-SA 3.0"}, "bemyeyes": {"f": "img/bemyeyes.jpg", "alt": "A person on a smartphone video call", "a": "Shixart1985", "u": "https://commons.wikimedia.org/wiki/File:Woman_sitting_on_a_chair_in_a_cafe_using_her_smartphone_to_make_a_video_call.jpg", "l": "CC BY 2.0"}, "benson": {"f": "img/benson.jpg", "alt": "Early newspaper picture of the Alaska flag", "a": "Evening Star newspaper", "u": "https://commons.wikimedia.org/wiki/File:Flag_of_Alaska_(1928).png", "l": "Public domain"}, "bentley": {"f": "img/bentley.jpg", "alt": "Snowflakes photographed by Wilson Bentley", "a": "Wilson Bentley", "u": "https://commons.wikimedia.org/wiki/File:SnowflakesWilsonBentley.jpg", "l": "Public domain"}, "berger": {"f": "img/berger.jpg", "alt": "The skull of the Malapa fossil known as Karabo", "a": "Brett Eloff", "u": "https://commons.wikimedia.org/wiki/File:Australopithecus_sediba.JPG", "l": "CC BY-SA 4.0"}, "bernerslee": {"f": "img/bernerslee.jpg", "alt": "The NeXT computer Tim Berners-Lee used as the first web server, at CERN", "a": "Coolcaesar", "u": "https://commons.wikimedia.org/wiki/File:First_Web_Server.jpg", "l": "CC BY-SA 3.0"}, "biblioburro": {"f": "img/biblioburro.jpg", "alt": "The Biblioburro traveling library in Colombia", "a": "Acción Visual/Diana Arias", "u": "https://commons.wikimedia.org/wiki/File:Biblioburro.jpg", "l": "CC BY-SA 3.0"}, "blackawton": {"f": "img/blackawton.jpg", "alt": "A bumblebee on lavender", "a": "Martin Falbisoner", "u": "https://commons.wikimedia.org/wiki/File:Bumblebee_on_Lavender_Blossom.JPG", "l": "CC BY-SA 4.0"}, "braille": {"f": "img/braille.jpg", "alt": "Reading braille with fingertips", "a": "Flickr user (see source)", "u": "https://commons.wikimedia.org/wiki/File:A_person_reading_a_braille_book.jpg", "l": "CC BY 2.0"}, "buddybench": {"f": "img/buddybench.jpg", "alt": "A buddy bench at an elementary school", "a": "Rick Obst", "u": "https://commons.wikimedia.org/wiki/File:Buddy_Bench.jpg", "l": "CC BY 2.0"}, "burney": {"f": "img/burney.jpg", "alt": "Pluto, photographed by NASA's New Horizons", "a": "NASA / JHUAPL / SwRI", "u": "https://commons.wikimedia.org/wiki/File:Pluto-01_Stern_03_Pluto_Color_TXT.jpg", "l": "Public domain"}, "campbell": {"f": "img/campbell.jpg", "alt": "A handmade teddy bear", "a": "Clément Bucco-Lechat", "u": "https://commons.wikimedia.org/wiki/File:Handmade_teddy_bear.jpg", "l": "CC BY-SA 3.0"}, "cateura": {"f": "img/cateura.jpg", "alt": "Instruments made from recycled trash, from the Recycled Orchestra", "a": "Frank Kovalchek from Anchorage, Alaska, USA", "u": "https://commons.wikimedia.org/wiki/File:Recycled_instruments_(14165207590).jpg", "l": "CC BY 2.0"}, "cbc": {"f": "img/cbc.jpg", "alt": "Birdwatchers on a deck with binoculars", "a": "John and Karen Hollingsworth, USFWS", "u": "https://commons.wikimedia.org/wiki/File:Birdwatchers_on_a_deck_observe_birds_using_binoculars_and_cameras.jpg", "l": "Public domain"}, "copeny": {"f": "img/copeny.jpg", "alt": "The Flint water tower, Michigan", "a": "Alberryii", "u": "https://commons.wikimedia.org/wiki/File:Flint_Water_Tower.jpg", "l": "CC BY-SA 4.0"}, "einstein": {"f": "img/einstein.jpg", "alt": "The house in Bern where Einstein lived", "a": "Dsmntl", "u": "https://commons.wikimedia.org/wiki/File:Albert_einstein_house_bern.JPG", "l": "CC BY-SA 3.0"}, "farnsworth": {"f": "img/farnsworth.jpg", "alt": "One of the first image dissector tubes", "a": "Philo T. Farnsworth", "u": "https://commons.wikimedia.org/wiki/File:Farnsworth_image_dissector_tube.jpg", "l": "Public domain"}, "felix": {"f": "img/felix.jpg", "alt": "Planting a tree seedling", "a": "Ben Hemmings", "u": "https://commons.wikimedia.org/wiki/File:Tree_planter_planting_trees_in_British_Columbia,_Canada.jpg", "l": "CC BY-SA 4.0"}, "ferreira": {"f": "img/ferreira.jpg", "alt": "Tiny plastic beads seen under a microscope", "a": "Dantor", "u": "https://commons.wikimedia.org/wiki/File:Mikroplastasarp.jpg", "l": "CC BY-SA 3.0"}, "foldscope": {"f": "img/foldscope.jpg", "alt": "The paper parts of a Foldscope microscope", "a": "Cybulski et al.", "u": "https://commons.wikimedia.org/wiki/File:Foldscope-Origami-Based-Paper-Microscope-pone.0098781.g001.jpg", "l": "CC BY 4.0"}, "galaxyzoo": {"f": "img/galaxyzoo.jpg", "alt": "Hanny's Voorwerp, the glowing green cloud, seen by Hubble", "a": "NASA, ESA, W. Keel", "u": "https://commons.wikimedia.org/wiki/File:Hannys_voorwerp.jpg", "l": "Public domain"}, "geesbend": {"f": "img/geesbend.jpg", "alt": "A pieced quilt by Lucy Mingo of Gee's Bend, 1979", "a": "Lucy Mingo", "u": "https://commons.wikimedia.org/wiki/File:Pieced_Quilt,_c._1979_by_Lucy_Mingo,_Gee%27s_Bend,_Alabama.JPG", "l": "Public domain"}, "goldenrecord": {"f": "img/goldenrecord.jpg", "alt": "The cover of the Voyager Golden Record", "a": "NASA/JPL", "u": "https://commons.wikimedia.org/wiki/File:The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg", "l": "Public domain"}, "gray": {"f": "img/gray.jpg", "alt": "The Vela supernova remnant", "a": "ESO", "u": "https://commons.wikimedia.org/wiki/File:Vela_supernova_-_VST_-_Eso2214a.jpg", "l": "CC BY 4.0"}, "harrison": {"f": "img/harrison.jpg", "alt": "A Harrison marine chronometer, Royal Museums Greenwich", "a": "Colonel Warden", "u": "https://commons.wikimedia.org/wiki/File:Harrison_H4_chronometer.jpg", "l": "CC BY-SA 3.0"}, "henson": {"f": "img/henson.jpg", "alt": "Shadow puppets on display", "a": "Frank Kovalchek from Anchorage, Alaska, USA", "u": "https://commons.wikimedia.org/wiki/File:Nang_Sbek_Thom_(Cambodian_shadow_puppet)_at_the_Musical_Instruments_Museum.jpg", "l": "CC BY 2.0"}, "hiphop73": {"f": "img/hiphop73.jpg", "alt": "1520 Sedgwick Avenue in the Bronx", "a": "Bigtimepeace", "u": "https://commons.wikimedia.org/wiki/File:1520_Sedwick_Ave.,_Bronx,_New_York1.JPG", "l": "Public domain"}, "hokulea": {"f": "img/hokulea.jpg", "alt": "Hōkūleʻa arriving in Honolulu from Tahiti, 1976", "a": "Phil Uhl", "u": "https://commons.wikimedia.org/wiki/File:Hokule%27a.jpg", "l": "CC BY-SA 3.0"}, "hreljac": {"f": "img/hreljac.jpg", "alt": "Filling water containers at a well", "a": "Likefully", "u": "https://commons.wikimedia.org/wiki/File:Girls_collecting_water_in_Moroto,_Uganda.jpg", "l": "CC BY-SA 4.0"}, "johns": {"f": "img/johns.jpg", "alt": "Robert Russa Moton High School, Farmville, Virginia", "a": "William T. Ziglar, Jr.", "u": "https://commons.wikimedia.org/wiki/File:Robert_Russa_Moton_High_School,_Farmville,_VA.JPG", "l": "CC BY-SA 3.0"}, "jonah": {"f": "img/jonah.jpg", "alt": "A colorful crochet blanket", "a": "999real", "u": "https://commons.wikimedia.org/wiki/File:Blue,_pink,_white,_purple_crochet_blanket_2.jpg", "l": "CC0"}, "jr": {"f": "img/jr.jpg", "alt": "Inside Out Project portraits pasted on a wall in Paris", "a": "Marc Merlin", "u": "https://commons.wikimedia.org/wiki/File:Inside_Out_Project_display_on_the_BeltLine-facing_wall_of_Paris_on_Ponce_in_Atlanta,_September_2018.jpg", "l": "CC BY-SA 4.0"}, "kabin": {"f": "img/kabin.jpg", "alt": "Cork City Hall on the River Lee", "a": "KlausFoehl", "u": "https://commons.wikimedia.org/wiki/File:Cork_City_Hall01_2009-04-30.jpg", "l": "CC BY-SA 3.0"}, "kamkwamba": {"f": "img/kamkwamba.jpg", "alt": "William Kamkwamba's windmill in Malawi", "a": "Erik (HASH) Hersman from Orlando", "u": "https://commons.wikimedia.org/wiki/File:William_Kamkwambas_new_windmill.jpg", "l": "CC BY 2.0"}, "kere": {"f": "img/kere.jpg", "alt": "The school at Gando, Burkina Faso", "a": "GandoIT", "u": "https://commons.wikimedia.org/wiki/File:Kere_primary_school_extension_gando.jpg", "l": "CC BY-SA 3.0"}, "khan": {"f": "img/khan.jpg", "alt": "A student working out a problem on a chalkboard", "a": "USFWS", "u": "https://commons.wikimedia.org/wiki/File:Hatchery_math_(49623313353).jpg", "l": "Public domain"}, "lamarr": {"f": "img/lamarr.jpg", "alt": "A drawing from the frequency-hopping patent by Hedy Lamarr and George Antheil", "a": "Hedy Lamarr and George Antheil", "u": "https://commons.wikimedia.org/wiki/File:Hedy_Lamarr_and_George_Antheil%27s_patent.webp", "l": "CC BY-SA 2.0"}, "lang": {"f": "img/lang.jpg", "alt": "Folded paper mountains, made by origami", "a": "Origamicke", "u": "https://commons.wikimedia.org/wiki/File:Origami_non-periodic_tessellation.jpg", "l": "CC BY-SA 4.0"}, "langar": {"f": "img/langar.jpg", "alt": "The langar kitchen at the Golden Temple, Amritsar", "a": "Kritzolina", "u": "https://commons.wikimedia.org/wiki/File:Guru_Ram_Das_Langar_in_the_golden_temple_complex_in_Amritsar_04.jpg", "l": "CC BY-SA 4.0"}, "lazen": {"f": "img/lazen.jpg", "alt": "A molecular model", "a": "Piswind", "u": "https://commons.wikimedia.org/wiki/File:Molecular_ball-and-stick_model_of_Perflubron,_overlayed_with_electron-density_coded_VdW_model.png", "l": "CC BY-SA 3.0"}, "leeuwenhoek": {"f": "img/leeuwenhoek.jpg", "alt": "A replica of a Leeuwenhoek microscope", "a": "Jeroen Rouwkema", "u": "https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Microscope.png", "l": "CC BY-SA 3.0"}, "lfl": {"f": "img/lfl.jpg", "alt": "A Little Free Library", "a": "Grendelkhan", "u": "https://commons.wikimedia.org/wiki/File:Little_Free_Library_on_Winchester_Blvd.jpg", "l": "CC BY-SA 4.0"}, "magie": {"f": "img/magie.jpg", "alt": "The first edition of The Landlord's Game", "a": "Unknown", "u": "https://commons.wikimedia.org/wiki/File:Landlords_board_game_cover.jpg", "l": "Public domain"}, "makosinski": {"f": "img/makosinski.jpg", "alt": "A flashlight", "a": "KMJ at German Wikipedia", "u": "https://commons.wikimedia.org/wiki/File:Flashlight.jpg", "l": "CC BY-SA 3.0"}, "marley": {"f": "img/marley.jpg", "alt": "A stamp showing a girl with a pile of books", "a": "Post of Albania", "u": "https://commons.wikimedia.org/wiki/File:Stamp_of_Albania_-_2011_-_Colnect_375384_-_Girl_stack_of_books.jpeg", "l": "Public domain"}, "mayapenn": {"f": "img/mayapenn.jpg", "alt": "A pile of fabric scraps", "a": "Elinkorn", "u": "https://commons.wikimedia.org/wiki/File:Fabric_scraps.jpg", "l": "CC BY-SA 4.0"}, "merian": {"f": "img/merian.jpg", "alt": "Banana flower and fruit, painted by Maria Sibylla Merian", "a": "Maria Sibylla Merian", "u": "https://commons.wikimedia.org/wiki/File:Maria_Sibylla_Merian_Banana_Flower_and_Fruit,_from_Metamorphosis_insectorum_Surinamensium_1705.jpg", "l": "Public domain"}, "mikaila": {"f": "img/mikaila.jpg", "alt": "A honey bee on an aster flower", "a": "John Severns (Severnjc)", "u": "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg", "l": "Public domain"}, "miranda": {"f": "img/miranda.jpg", "alt": "Upper Manhattan seen from West 168th Street", "a": "Delibash", "u": "https://commons.wikimedia.org/wiki/File:View_From_W168th_Washington_Heights_Manhattan_NYC.jpg", "l": "CC BY-SA 4.0"}, "mirzakhani": {"f": "img/mirzakhani.jpg", "alt": "Curves on a hyperbolic surface", "a": "Café Bene", "u": "https://commons.wikimedia.org/wiki/File:Geodesics_on_hyperbolic_surface.jpg", "l": "CC BY-SA 3.0"}, "nandi": {"f": "img/nandi.jpg", "alt": "A drum kit", "a": "Mostafameraji", "u": "https://commons.wikimedia.org/wiki/File:A_drum_kit_made_by_Mapex_Drums_-_Cacon_Photos-_Copyleft_-_Creative_Commons_11.jpg", "l": "CC BY 4.0"}, "nickpark": {"f": "img/nickpark.jpg", "alt": "A clay animation figure", "a": "Bromanski", "u": "https://commons.wikimedia.org/wiki/File:Beer_belly_clay_man.jpg", "l": "CC BY-SA 3.0"}, "nirghin": {"f": "img/nirghin.jpg", "alt": "Oranges, whole, halved and peeled", "a": "Ivar Leidus", "u": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg", "l": "CC BY-SA 4.0"}, "nissen": {"f": "img/nissen.jpg", "alt": "Trampolines set up for a competition", "a": "Tim Dannenberg", "u": "https://commons.wikimedia.org/wiki/File:2021_Trampoline_WAGC,_Baku.jpg", "l": "CC BY-SA 4.0"}, "osm": {"f": "img/osm.jpg", "alt": "An OpenStreetMap map of Manhattan", "a": "OpenStreetMap contributors", "u": "https://commons.wikimedia.org/wiki/File:Manhattan_NYC_OpenStreetMap_2023-08-21.png", "l": "CC BY 4.0"}, "parkrun": {"f": "img/parkrun.jpg", "alt": "Runners at Bushy parkrun, London", "a": "Kevin Wood", "u": "https://commons.wikimedia.org/wiki/File:Bushy_parkrun_27th_September_2014_(15194006519).jpg", "l": "CC BY 2.0"}, "peltier": {"f": "img/peltier.jpg", "alt": "Lake Huron and Manitoulin Island", "a": "Andre Carrotflower", "u": "https://commons.wikimedia.org/wiki/File:20150706_-_46_-_The_North_Shore,_Ont._-_Manitoulin_seen_distantly_from_Highway_17.jpg", "l": "CC BY-SA 4.0"}, "popsicle": {"f": "img/popsicle.jpg", "alt": "A fruit ice pop", "a": "Tony Webster from San Francisco, California", "u": "https://commons.wikimedia.org/wiki/File:St._Pops_Frozen_Treat_-_Pear_Rosemary_Popsicle_(22068097283).jpg", "l": "CC BY-SA 2.0"}, "precious": {"f": "img/precious.jpg", "alt": "Plastic waste collected for recycling machines", "a": "Russs95", "u": "https://commons.wikimedia.org/wiki/File:Tanzania-precious-plastic-plank.jpg", "l": "CC BY-SA 4.0"}, "raiders": {"f": "img/raiders.jpg", "alt": "A Super 8 film camera", "a": "Clément Bucco-Lechat", "u": "https://commons.wikimedia.org/wiki/File:Rony_Super_8_film_camera_(8).JPG", "l": "CC BY-SA 3.0"}, "rainforest": {"f": "img/rainforest.jpg", "alt": "Sign of the Children's Eternal Rainforest", "a": "Babbage", "u": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Children%E2%80%99s_Eternal_Rainforest.jpg", "l": "CC0"}, "rao": {"f": "img/rao.jpg", "alt": "A classroom drinking water test kit", "a": "Staff photographer", "u": "https://commons.wikimedia.org/wiki/File:Hach_Classroom_Drinking_Water_Testing_Kit_2006.526_open.jpg", "l": "CC BY-SA 3.0"}, "reiniger": {"f": "img/reiniger.jpg", "alt": "A scene from The Adventures of Prince Achmed (1926)", "a": "Lotte Reiniger", "u": "https://commons.wikimedia.org/wiki/File:Lotte_Reiniger_Prinz_Achmed_003.jpg", "l": "CC BY-SA 4.0"}, "repaircafe": {"f": "img/repaircafe.jpg", "alt": "Volunteers fixing things at a Repair Café", "a": "Ilvy Njiokiktjien", "u": "https://commons.wikimedia.org/wiki/File:Repair_Cafe_by_Ilvy_Njiokiktjien.jpg", "l": "CC BY-SA 3.0"}, "saga": {"f": "img/saga.jpg", "alt": "A beach on Lake Vidöstern, Sweden", "a": "Nit-hak", "u": "https://commons.wikimedia.org/wiki/File:Osudden_badestrand.jpg", "l": "CC BY-SA 4.0"}, "samaira": {"f": "img/samaira.jpg", "alt": "Board game pieces", "a": "Mshuang2", "u": "https://commons.wikimedia.org/wiki/File:Board_game_pieces.jpg", "l": "CC0"}, "scratch": {"f": "img/scratch.jpg", "alt": "A Scratch programming block", "a": "MIT Lifelong Kindergarten", "u": "https://commons.wikimedia.org/wiki/File:Scratch_puntare_direzione2.png", "l": "CC BY-SA 3.0"}, "severn": {"f": "img/severn.jpg", "alt": "Rio de Janeiro at the time of the 1992 Earth Summit", "a": "Celso Meira", "u": "https://commons.wikimedia.org/wiki/File:Faixa_do_Greenpeace_no_P%C3%A3o_de_A%C3%A7%C3%BAcar_%E2%80%93_Rio-92_%E2%80%93_1992_%E2%80%93_Celso_Meira.jpeg", "l": "Public domain"}, "shah": {"f": "img/shah.jpg", "alt": "Versova beach, Mumbai", "a": "Shishirdasika", "u": "https://commons.wikimedia.org/wiki/File:Versova_beach_in_Mumbai.jpg", "l": "CC BY-SA 4.0"}, "shelley": {"f": "img/shelley.jpg", "alt": "Title page of the first edition of Frankenstein", "a": "Lackington et al. (publisher)", "u": "https://commons.wikimedia.org/wiki/File:Frankenstein_1818_edition_title_page.jpg", "l": "Public domain"}, "sistema": {"f": "img/sistema.jpg", "alt": "A youth orchestra rehearsing, 1950s", "a": "Los Angeles Times", "u": "https://commons.wikimedia.org/wiki/File:Jack_Benny_rehearsal.jpg", "l": "CC BY 4.0"}, "skateistan": {"f": "img/skateistan.jpg", "alt": "Skateistan students jumping in Kabul", "a": "Jacob Simkin", "u": "https://commons.wikimedia.org/wiki/File:Skateistan_To_Live_and_Skate_Kabul.jpg", "l": "CC BY-SA 3.0"}, "slat": {"f": "img/slat.jpg", "alt": "The Ocean Cleanup Interceptor at Ballona Creek, California", "a": "Motaykay", "u": "https://commons.wikimedia.org/wiki/File:Interceptor_Original_007.jpg", "l": "CC BY-SA 4.0"}, "snurfer": {"f": "img/snurfer.jpg", "alt": "Drawing from the Snurfer patent", "a": "Sherman Poppen (patent)", "u": "https://commons.wikimedia.org/wiki/File:Snurfer_patent_3378274_diagram_excerpt.png", "l": "Public domain"}, "steelpan": {"f": "img/steelpan.jpg", "alt": "Steelpans at Trinidad and Tobago Carnival", "a": "Kip1234", "u": "https://commons.wikimedia.org/wiki/File:Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg", "l": "CC BY-SA 4.0"}, "storycorps": {"f": "img/storycorps.jpg", "alt": "The StoryCorps mobile recording booth", "a": "Library of Congress", "u": "https://commons.wikimedia.org/wiki/File:StoryCorps_booth_vehicle.jpg", "l": "Public domain"}, "tani": {"f": "img/tani.jpg", "alt": "A chess set", "a": "Wilfredor", "u": "https://commons.wikimedia.org/wiki/File:Chess_game_Staunton_No._6_perfil_view_8.jpg", "l": "CC0"}, "terryfox": {"f": "img/terryfox.jpg", "alt": "Statue of Terry Fox at the Mile Zero memorial", "a": "Gordon Leggett", "u": "https://commons.wikimedia.org/wiki/File:2017-10-07_03_Terry_Fox_Statue_at_Mile_0,_St._John%27s_NL_Canada.jpg", "l": "CC BY-SA 4.0"}, "tolkien": {"f": "img/tolkien.jpg", "alt": "An inscription in Tolkien's Tengwar letters", "a": "Nwn9", "u": "https://commons.wikimedia.org/wiki/File:Nwn9_w_Tengwarze.JPG", "l": "CC BY-SA 4.0"}, "torvalds": {"f": "img/torvalds.jpg", "alt": "Tux, the Linux penguin", "a": "Renato.pierri", "u": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg", "l": "CC BY-SA 4.0"}, "turere": {"f": "img/turere.jpg", "alt": "A lion in Nairobi National Park", "a": "Elena.laps", "u": "https://commons.wikimedia.org/wiki/File:Lion_at_Nairobi_National_Park,_Kenya.jpg", "l": "CC BY 4.0"}, "ultimate": {"f": "img/ultimate.jpg", "alt": "An ultimate frisbee match", "a": "fw42", "u": "https://commons.wikimedia.org/wiki/File:Ultimate_Frisbee_Jump.jpg", "l": "CC BY 2.0"}, "utahraptor": {"f": "img/utahraptor.jpg", "alt": "A Utahraptor skeleton", "a": "Zach Tirrell", "u": "https://commons.wikimedia.org/wiki/File:Utahraptor_skeleton_NAMAL_white_background.jpg", "l": "CC BY-SA 2.0"}, "vchoir": {"f": "img/vchoir.jpg", "alt": "A page of choral sheet music", "a": "Unknown", "u": "https://commons.wikimedia.org/wiki/File:Anthem_of_Kamchatka_Krai_(orchestra_and_choir_sheet_music).jpg", "l": "Public domain"}, "ventris": {"f": "img/ventris.jpg", "alt": "A Mycenaean clay tablet, National Archaeological Museum, Athens", "a": "Tiu Fraili", "u": "https://commons.wikimedia.org/wiki/File:Tabrina_mic%C3%A9nica.jpg", "l": "CC BY-SA 3.0"}, "walsh": {"f": "img/walsh.jpg", "alt": "Charles Ellet's footbridge over the Niagara gorge", "a": "Charles Parsons (1821–1910)", "u": "https://commons.wikimedia.org/wiki/File:Charles_Parsons_-_Niagara_Falls_Suspension_Bridge.jpg", "l": "Public domain"}, "wordle": {"f": "img/wordle.jpg", "alt": "An empty Wordle-style grid", "a": "Javidarko", "u": "https://commons.wikimedia.org/wiki/File:Wordle_Grid.png", "l": "CC0"}, "wright": {"f": "img/wright.jpg", "alt": "The first flight of the Wright Flyer, 1903", "a": "John T. Daniels", "u": "https://commons.wikimedia.org/wiki/File:First_flight3.jpg", "l": "Public domain"}, "yunus": {"f": "img/yunus.jpg", "alt": "A handicraft workshop for village women in Bangladesh", "a": "Afifa Afrin", "u": "https://commons.wikimedia.org/wiki/File:Handicraft_training_workshop_in_Bangladeshi_village_women_in_2015_24.jpg", "l": "CC BY-SA 3.0"}};
 
+/* Getting started: a tiny first try and a few trusted places to learn, per realm. Links checked November 2026. */
+var START = {
+  music: { tiny: "Make a 30-second version: one beat, one tune or one verse. Record it on a phone, even if it sounds rough.",
+    res: [["Chrome Music Lab", "https://musiclab.chromeexperiments.com/", "Play with rhythm, melody and sound right in the browser."],
+      ["Learning Music by Ableton", "https://learningmusic.ableton.com/", "Learn beats, basslines and song structure step by step."],
+      ["musictheory.net lessons", "https://www.musictheory.net/lessons", "Free lessons on reading and writing music."]] },
+  stage: { tiny: "Act out, film or puppet a one-minute scene with one friend or one toy. No sets or costumes yet.",
+    res: [["BBC Bitesize: Drama", "https://www.bbc.co.uk/bitesize/subjects/zbckjxs", "How scripts, staging and performance work."],
+      ["Into Film resources", "https://www.intofilm.org/resources", "Filmmaking guides made for young people."]] },
+  words: { tiny: "Write the first page, the first poem or the first letter in 20 minutes. Don't fix anything yet.",
+    res: [["Poetry Foundation: for children", "https://www.poetryfoundation.org/learn/children", "Poems to read aloud and ideas for writing your own."],
+      ["Scholastic Art & Writing Awards", "https://www.artandwriting.org/", "A national contest for students in grades 7 to 12."]] },
+  culture: { tiny: "Ask one older person three questions about the topic. Write down or record what they say.",
+    res: [["StoryCorps: what to ask", "https://support.storycorps.org/help-center/what-questions-should-i-ask-in-my-interview", "Good questions for interviewing someone about their life."],
+      ["Library of Congress: Free to Use", "https://www.loc.gov/free-to-use/", "Old photos, maps and recordings you are allowed to use."]] },
+  art: { tiny: "Make three quick sketches or small tests with cheap materials before you start the real piece.",
+    res: [["Tate Kids", "https://www.tate.org.uk/kids", "Art ideas, games and famous artists explained for kids."],
+      ["Art for Kids Hub", "https://www.artforkidshub.com/", "Step-by-step drawing lessons."]] },
+  make: { tiny: "Build a rough model from cardboard, tape or scraps to test the idea before you use good materials.",
+    res: [["Exploratorium Tinkering Studio", "https://www.exploratorium.edu/tinkering", "Building projects from a science museum, with guides."],
+      ["Instructables", "https://www.instructables.com/", "Step-by-step build guides written by makers."]] },
+  tech: { tiny: "Get the smallest piece working: one character that moves, one light that blinks, one button that does something.",
+    res: [["Scratch ideas", "https://scratch.mit.edu/ideas", "Tutorials for games, animations and stories in Scratch."],
+      ["Raspberry Pi Foundation projects", "https://projects.raspberrypi.org/en", "Free coding and electronics projects, beginner to advanced."],
+      ["Code.org", "https://code.org/", "Free coding courses for every grade."],
+      ["MIT App Inventor", "https://appinventor.mit.edu/", "Build a real phone app with blocks."]] },
+  games: { tiny: "Make a paper version or one single level, then play it once with someone and watch what happens.",
+    res: [["Scratch ideas", "https://scratch.mit.edu/ideas", "Make your own video game step by step."],
+      ["Lichess: learn chess", "https://lichess.org/learn", "Free, interactive chess lessons."],
+      ["NRICH", "https://nrich.maths.org/", "Math puzzles and games from the University of Cambridge."]] },
+  civic: { tiny: "Find out who makes decisions about the problem, and write one question you would ask them.",
+    res: [["iCivics games", "https://www.icivics.org/play", "Games about laws, voting and how government works."],
+      ["Learning to Give", "https://www.learningtogive.org/", "Ideas for projects that help your community."]] },
+  adventure: { tiny: "Do one short, safe practice session with an adult nearby. Time it or measure it so you can see progress.",
+    res: [["Leave No Trace: the 7 principles", "https://lnt.org/7-principles", "How to enjoy the outdoors and leave it as you found it."]] },
+  nature: { tiny: "Sit and watch one spot outside for 20 minutes. Write down or photograph everything you notice.",
+    res: [["Seek by iNaturalist", "https://www.inaturalist.org/pages/seek_app", "A free app that names plants and animals from your camera."],
+      ["All About Birds", "https://www.allaboutbirds.org/", "Bird guides and songs from the Cornell Lab of Ornithology."],
+      ["Journey North", "https://journeynorth.org/", "Track migrations and seasons and share what you see."],
+      ["Zooniverse", "https://www.zooniverse.org/", "Help real scientists by sorting photos and data."]] },
+  science: { tiny: "Write your question in one sentence and run one quick test. Write down exactly what happened.",
+    res: [["Science Buddies", "https://www.sciencebuddies.org/science-fair-projects/project-ideas", "Hundreds of project ideas with full instructions."],
+      ["Exploratorium Science Snacks", "https://www.exploratorium.edu/snacks", "Small experiments you can build from everyday stuff."],
+      ["NASA Space Place", "https://spaceplace.nasa.gov/", "Space and Earth science explained, with activities."],
+      ["Zooniverse", "https://www.zooniverse.org/", "Take part in real research projects online."]] },
+  enterprise: { tiny: "Make one sample and ask three people whether they would buy it, and for how much.",
+    res: [["Lemonade Day", "https://lemonadeday.org/", "A free program that walks kids through starting a small business."]] },
+  food: { tiny: "Cook one small batch or plant one pot. Write down what worked and what you would change.",
+    res: [["KidsGardening", "https://kidsgardening.org/", "Garden projects and growing guides for kids."],
+      ["USU Extension: Yard & Garden", "https://extension.usu.edu/yardandgarden/", "Growing advice for Utah's climate."]] },
+  service: { tiny: "Ask the people you want to help what they actually need, before you decide what to make or do.",
+    res: [["Learning to Give", "https://www.learningtogive.org/", "Service project ideas and how to plan them."]] }
+};
+
 (function () {
 'use strict';
 var $ = function (id) { return document.getElementById(id); };
@@ -1707,6 +1785,9 @@ function kidLabel(s) {
 var st = { sel: null, hover: null, kid: false, view: 'map', trail: [], hist: [], saved: [], min: false, pane: 'home' };
 try { var raw = localStorage.getItem('atlas-sparks'); if (raw) st.saved = JSON.parse(raw) || []; } catch (e) { st.saved = []; }
 function persist() { try { localStorage.setItem('atlas-sparks', JSON.stringify(st.saved)); } catch (e) {} }
+var ME = {};
+try { ME = JSON.parse(localStorage.getItem('atlas-me') || '{}') || {}; } catch (e) { ME = {}; }
+function persistMe() { try { localStorage.setItem('atlas-me', JSON.stringify(ME)); } catch (e) {} }
 
 /* ---------- theme ---------- */
 var T = {};
@@ -2063,13 +2144,14 @@ function zoomAt(mx, my, fac) {
 function zoomBy(fac) { if (st.view === 'globe') { gscale = clamp(gscale * fac, 0.8, 7); redraw(); } else fly(cam.x, cam.y, cam.k * fac, 260); }
 
 /* ---------- panel ---------- */
-var pbody = $('pbody');
+var pbody = $('pbody'), settingHash = false;
 var STAR = '<svg class="star" aria-hidden="true"><use href="#i-star"/></svg>';
 function isSaved(t) { return st.saved.some(function (x) { return x.t === t; }); }
 function sparkList(arr, src) {
-  return arr.map(function (t) {
+  return arr.map(function (t, i) {
     var on = isSaved(t);
-    return '<div class="spark"><p>' + esc(t) + '</p><button class="save" type="button" data-save="' + esc(t) + '" data-src="' + src + '" aria-pressed="' + on + '">' + (on ? 'Saved' : 'Save') + '</button></div>';
+    return '<div class="spark"><p>' + esc(t) + '</p><div class="sbtns"><button class="go" type="button" data-spark="' + src + '|' + i + '">Get started<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>' +
+      '<button class="save" type="button" data-save="' + esc(t) + '" data-src="' + src + '" aria-pressed="' + on + '">' + (on ? 'Saved' : 'Save') + '</button></div></div>';
   }).join('');
 }
 function storyRow(s) {
@@ -2083,17 +2165,115 @@ function nearby(s) { /* stories one path away, in other parts of the map */
   s.L.forEach(function (w) { w.stories.concat(w.linked).some(function (o) { if (o !== s && out.indexOf(o) < 0) { out.push(o); return true; } return false; }); });
   return out.slice(0, 4);
 }
+
+/* ---------- spark pages: how to get started ---------- */
+var FIELDS = [
+  ['grade', 'What grade are you in?', '6', 'My grade'],
+  ['good', 'What are you already good at?', 'drawing, Minecraft, building with LEGO, talking to people', 'Things I am already good at'],
+  ['love', 'What do you love?', 'horses, space, funny videos, cooking', 'Things I love'],
+  ['time', 'How much time can you spend?', 'about 3 hours a week for 6 weeks', 'Time I can spend'],
+  ['have', 'What materials and tools do you have?', 'a Chromebook, cardboard, a hot glue gun', 'Materials and tools I have'],
+  ['help', 'Who could help you?', 'my guide, my aunt who sews', 'People who could help me'],
+  ['worry', 'What part feels hard or new?', 'I have never used a sewing machine', 'The part that feels hard or new'],
+  ['show', 'What would you like to show at the showcase?', 'a finished short film and how I made it', 'What I would like to show at our showcase'],
+  ['twist', 'Your own twist on this idea (optional)', 'make it about my dog instead', 'My own twist on the idea']
+];
+function meKey(f, sp) { return f === 'twist' ? 'twist:' + sp.src + '|' + sp.i : f; }
+var FOLLOW = [
+  ['I finished a step', 'I finished step [number]. Here is what I did and how it went: [describe it]. What should I do next? If something went wrong, help me figure out why before I try again.'],
+  ['I am stuck', 'I am stuck on step [number]. I tried [what you tried] and this happened: [what happened]. Ask me questions that help me find the problem myself instead of giving me the answer.'],
+  ['Too hard or too easy', 'This plan feels too [hard / easy] for me. Help me change it so it is a real challenge but still something I can finish in the time I have.'],
+  ['Get ready for the showcase', 'Our showcase is in [number] weeks. Help me decide what to show, and help me practice a 2-minute talk about what I made, why it matters and what I learned.']
+];
+function sparkAt(src, i) { var n = N[src]; return n && n.sparks && n.sparks[i] != null ? n.sparks[i] : null; }
+function buildPrompt(sp) {
+  var n = N[sp.src], t = sparkAt(sp.src, sp.i), w = n.type === 'way' ? n : n.W;
+  var L = ['Hi! I am a student and I want to start a passion project. Please be my project coach.', '',
+    'My project idea: "' + t + '"',
+    'Kind of project: ' + w.name + (n.type === 'story' ? '. I got the idea from the story of ' + n.name + ' (' + n.tag.charAt(0).toLowerCase() + n.tag.slice(1) + ').' : '.')];
+  var tw = (ME[meKey('twist', sp)] || '').trim(); if (tw) L.push('My own twist on the idea: ' + tw);
+  var me = FIELDS.filter(function (f) { return f[0] !== 'twist'; }).map(function (f) { var v = (ME[f[0]] || '').trim(); return v ? '- ' + f[3] + ': ' + v : null; }).filter(Boolean);
+  if (me.length) { L.push('', 'About me:'); L.push.apply(L, me); }
+  L.push('', 'How to help me:',
+    '1. First ask me up to 3 questions about anything you still need to know about me or the project. Wait for my answers.',
+    '2. Then offer 3 versions of the project: a small one, a medium one and a stretch one. Let me choose.',
+    '3. Break the version I choose into 5 to 8 steps. Each step should fit in one work session and say what "done" looks like.',
+    '4. Make step 1 something I can finish today in 30 minutes or less.',
+    '5. Build on the things I am already good at and the things I love.',
+    '6. Mark any step that needs an adult, sharp or hot tools, or safety gear.',
+    '7. Be a coach. Do not do the work for me. Give hints, examples and questions so I learn to do it myself.',
+    '8. Use clear, simple words and keep each answer short.');
+  return L.join('\n');
+}
+function renderSpark() {
+  var sp = st.sp, n = N[sp.src], t = sparkAt(sp.src, sp.i), w = n.type === 'way' ? n : n.W, R = n.R, S = START[R.id] || { tiny: '', res: [] };
+  var on = isSaved(t), qy = w.name.toLowerCase();
+  $('ptitle').textContent = 'Get started';
+  var h = '<div style="--h:' + R.hue + ';display:contents">' +
+    '<div class="crumb"><button type="button" data-go="' + R.id + '">' + esc(R.name) + '</button><span>›</span><button type="button" data-go="' + w.id + '">' + esc(w.name) + '</button>' +
+    (n.type === 'story' ? '<span>›</span><button type="button" data-go="' + n.id + '">' + esc(n.name) + '</button>' : '') + '</div>' +
+    '<div class="sparkbox big"><h3>' + STAR + 'Your spark</h3><p class="sparkq">' + esc(t) + '</p>' +
+    '<div class="acts"><button class="save" type="button" data-save="' + esc(t) + '" data-src="' + n.id + '" aria-pressed="' + on + '">' + (on ? 'Saved' : 'Save to My sparks') + '</button></div></div>' +
+    '<div class="sec"><h3>Your first hour</h3><ol class="steps">' +
+    '<li><b>Look around (15 minutes).</b> Find two or three examples of people who did something like this. Try the links at the bottom of this page. Notice what you like.</li>' +
+    '<li><b>Try a tiny version (30 minutes).</b> ' + esc(S.tiny) + '</li>' +
+    '<li><b>Plan the rest.</b> Use the AI coach below to break your project into small steps, then show the plan to your guide.</li>' +
+    '<li><b>Aim for the showcase.</b> Decide what you will have to show at the next showcase, even if the whole project is not finished yet.</li></ol></div>' +
+    '<div class="sec coach"><h3>Plan it with an AI coach</h3>' +
+    '<p>Everyone starts from a different place. Fill in what you can, then copy the prompt into an AI chatbot. It will ask about you and help you break the project into steps that fit you.</p>' +
+    '<p class="warn">Use a chatbot your guide or parent has said is OK, and use it with them. Most chatbots are only for ages 13 and up, and some only for adults. Never type your full name, school or address into one.</p>' +
+    '<div class="form">' + FIELDS.map(function (f) {
+      var id = 'me-' + f[0], v = ME[meKey(f[0], sp)] || '';
+      return '<label for="' + id + '">' + esc(f[1]) + '</label><input id="' + id + '" data-me="' + f[0] + '" type="text" autocomplete="off" value="' + esc(v) + '" placeholder="' + esc('e.g. ' + f[2]) + '">';
+    }).join('') + '</div>' +
+    '<label class="plabel" for="aiprompt">Your prompt</label><textarea class="copybox prompt" id="aiprompt" readonly></textarea>' +
+    '<div class="acts"><button class="btn" type="button" data-copy="aiprompt">Copy prompt</button><button class="btn ghost" type="button" data-act="clearme">Clear my answers</button></div>' +
+    '<p class="fine">Your answers stay on this device so you only type them once. On a shared computer, press Clear when you are done.</p>' +
+    '<details class="more"><summary>Prompts for later</summary>' + FOLLOW.map(function (f, k) {
+      return '<div class="fprompt"><b>' + esc(f[0]) + '</b><p id="fp' + k + '">' + esc(f[1]) + '</p><button class="linkbtn" type="button" data-copy="fp' + k + '">Copy</button></div>';
+    }).join('') + '<p class="fine">Replace the parts in [brackets] before you send them.</p></details></div>' +
+    '<div class="sec"><h3>Learn more</h3><ul class="res">' + S.res.map(function (r) {
+      return '<li><a href="' + esc(r[1]) + '" target="_blank" rel="noopener">' + esc(r[0]) + '</a><span>' + esc(r[2]) + '</span></li>';
+    }).join('') +
+    (n.type === 'story' ? '<li><a href="https://en.wikipedia.org/w/index.php?search=' + encodeURIComponent(n.q) + '" target="_blank" rel="noopener">' + esc(n.name) + ' on Wikipedia</a><span>The full story behind this spark.</span></li>' : '') +
+    '</ul></div>' +
+    '<div class="sec"><h3>Search for tutorials and videos</h3><ul class="res">' +
+    '<li><a href="https://www.kiddle.co/s.php?q=' + encodeURIComponent(qy) + '" target="_blank" rel="noopener">Kiddle: ' + esc(qy) + '</a><span>A search engine filtered for kids.</span></li>' +
+    '<li><a href="https://www.instructables.com/search/?q=' + encodeURIComponent(qy) + '" target="_blank" rel="noopener">Instructables: ' + esc(qy) + '</a><span>Step-by-step project guides.</span></li>' +
+    '<li><a href="https://www.youtube.com/results?search_query=' + encodeURIComponent(qy + ' tutorial for kids') + '" target="_blank" rel="noopener">YouTube: ' + esc(qy) + ' tutorials</a><span>How-to videos. Watch with a grown-up nearby; search results are not checked.</span></li>' +
+    '</ul></div></div>';
+  return h;
+}
+function fillPrompt() { var ta = $('aiprompt'); if (ta && st.sp) ta.value = buildPrompt(st.sp); }
+function copyText(txt, el) {
+  var fb = function () { if (el && el.select) { el.focus(); el.select(); } toast('Select the text and copy it'); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function () { toast('Copied'); }, fb); else fb();
+}
+function hashFor() { return st.pane === 'spark' && st.sp ? st.sp.src + '/' + (st.sp.i + 1) : st.sel ? st.sel.id : ''; }
+function setHash() { var want = hashFor() ? '#' + hashFor() : ''; if (location.hash !== want && !(want === '' && !location.hash)) { settingHash = true; try { location.hash = want; } catch (e) {} setTimeout(function () { settingHash = false; }, 0); } }
+function openSpark(src, i) {
+  if (sparkAt(src, i) == null) return;
+  st.spFrom = st.pane === 'pack' ? 'pack' : 'node';
+  if (!st.sel || st.sel.id !== src) { st.pane = 'node'; select(N[src], {}); }
+  st.pane = 'spark'; st.sp = { src: src, i: i };
+  if (st.min) setMin(false);
+  render(); setHash();
+}
 function render() {
   var n = st.sel, h = '';
-  if (st.pane === 'pack') {
+  var wide = st.pane === 'spark'; if (panel.classList.contains('xl') !== wide) { panel.classList.toggle('xl', wide); setTimeout(redraw, 0); }
+  if (st.pane === 'spark' && st.sp) {
+    h = renderSpark();
+  } else if (st.pane === 'pack') {
     $('ptitle').textContent = 'My sparks';
     h = '<h2>My sparks</h2>';
     if (!st.saved.length) h += '<p class="lede">Nothing saved yet. When a spark gives you an idea, press Save and it will wait for you here.</p>';
     else {
       h += '<p>Pick your top three and take them to your guide. Each one is a starting point. Make it your own.</p>';
       h += st.saved.map(function (x, i) {
-        var src = N[x.src];
-        return '<div class="packitem"><p>' + esc(x.t) + '</p><div class="from"><span>From ' + (src ? '<button class="linkbtn" type="button" data-go="' + src.id + '">' + esc(src.name) + '</button>' : 'the atlas') +
+        var src = N[x.src], k = src && src.sparks ? src.sparks.indexOf(x.t) : -1;
+        return '<div class="packitem"><p>' + esc(x.t) + '</p>' + (k >= 0 ? '<button class="go" type="button" data-spark="' + src.id + '|' + k + '">Get started<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>' : '') +
+          '<div class="from"><span>From ' + (src ? '<button class="linkbtn" type="button" data-go="' + src.id + '">' + esc(src.name) + '</button>' : 'the atlas') +
           '</span><button class="linkbtn" type="button" data-remove="' + i + '">Remove</button></div></div>';
       }).join('');
       h += '<div class="acts"><button class="btn" type="button" id="copysparks">Copy my list</button></div><div id="copyarea"></div>';
@@ -2107,7 +2287,7 @@ function render() {
       '<ul class="how">' +
       '<li><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"/></svg><span>Drag to move. Scroll or pinch to zoom. Tap any dot.</span></li>' +
       '<li>' + STAR + '<span>An orange spark marks a project started by kids or teens. There are ' + STORIES.filter(function (s) { return s.kid; }).length + ' of them.</span></li>' +
-      '<li><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Every story ends with a spark for you. Save the ones you like.</span></li></ul>' +
+      '<li><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Every story ends with a spark for you. Press Get started for first steps, links and an AI planning prompt.</span></li></ul>' +
       '<div class="acts"><button class="btn blaze" type="button" data-act="wander">Take me somewhere</button><button class="btn ghost" type="button" data-act="globe">See the globe</button></div>' +
       '<div class="sec"><h3>Six places to begin</h3><ul class="list">' + picks.map(storyRow).join('') + '</ul></div>' +
       '<div class="sec"><h3>The fifteen realms</h3><div class="grid2">' + REALMS.map(function (r) {
@@ -2152,8 +2332,9 @@ function render() {
       '<a class="btn ghost" target="_blank" rel="noopener" href="https://en.wikipedia.org/w/index.php?search=' + encodeURIComponent(n.q) + '">Read more</a></div></div>';
   }
   pbody.innerHTML = h; pbody.scrollTop = 0;
-  $('pback').hidden = st.hist.length < 2 && st.pane !== 'pack';
-  $('phome').hidden = !n && st.pane !== 'pack';
+  if (st.pane === 'spark') fillPrompt();
+  $('pback').hidden = st.hist.length < 2 && st.pane !== 'pack' && st.pane !== 'spark';
+  $('phome').hidden = !n && st.pane !== 'pack' && st.pane !== 'spark';
   $('packn').textContent = st.saved.length;
 }
 function setMin(v) {
@@ -2161,7 +2342,6 @@ function setMin(v) {
   $('pmin').firstElementChild.style.transform = v ? 'rotate(180deg)' : '';
   redraw();
 }
-var settingHash = false;
 function select(n, opt) {
   opt = opt || {};
   st.pane = 'node'; st.sel = n || null; st.hover = null;
@@ -2171,9 +2351,7 @@ function select(n, opt) {
     if (st.view === 'globe' && n.type !== 'story') setView('map', true);
   } else st.hist = [];
   if (st.min) setMin(false);
-  render();
-  var want = n ? '#' + n.id : '';
-  if (location.hash !== want && !(want === '' && !location.hash)) { settingHash = true; try { location.hash = want; } catch (e) {} setTimeout(function () { settingHash = false; }, 0); }
+  render(); setHash();
   if (n) focusNode(n, opt.ms); else redraw();
 }
 function setView(v, quiet) {
@@ -2202,10 +2380,12 @@ function wander() {
 pbody.addEventListener('click', function (e) {
   var b = e.target.closest('button'); if (!b) return;
   if (b.dataset.go) { select(N[b.dataset.go]); return; }
+  if (b.dataset.spark) { var pr = b.dataset.spark.split('|'); openSpark(pr[0], +pr[1]); return; }
+  if (b.dataset.copy) { var el = $(b.dataset.copy); if (el) copyText(el.value != null && el.tagName === 'TEXTAREA' ? el.value : el.textContent, el); return; }
   if (b.dataset.save != null) {
     var t = b.dataset.save, i = -1; st.saved.forEach(function (x, j) { if (x.t === t) i = j; });
     if (i >= 0) st.saved.splice(i, 1); else st.saved.push({ t: t, src: b.dataset.src });
-    persist(); b.setAttribute('aria-pressed', String(i < 0)); b.textContent = i < 0 ? 'Saved' : 'Save'; $('packn').textContent = st.saved.length;
+    persist(); b.setAttribute('aria-pressed', String(i < 0)); b.textContent = i < 0 ? 'Saved' : (st.pane === 'spark' ? 'Save to My sparks' : 'Save'); $('packn').textContent = st.saved.length;
     toast(i < 0 ? 'Saved to My sparks' : 'Removed'); return;
   }
   if (b.dataset.remove != null) { st.saved.splice(+b.dataset.remove, 1); persist(); render(); return; }
@@ -2220,14 +2400,20 @@ pbody.addEventListener('click', function (e) {
   else if (act === 'globe') setView('globe');
   else if (act === 'map') setView('map');
   else if (act === 'cleartrail') { st.trail = []; render(); redraw(); }
+  else if (act === 'clearme') { ME = {}; persistMe(); render(); toast('Cleared'); }
+});
+pbody.addEventListener('input', function (e) {
+  var f = e.target.dataset && e.target.dataset.me; if (!f || !st.sp) return;
+  ME[meKey(f, st.sp)] = e.target.value; persistMe(); fillPrompt();
 });
 $('pback').addEventListener('click', function () {
   if (st.pane === 'pack') { st.pane = 'node'; render(); return; }
+  if (st.pane === 'spark') { st.pane = st.spFrom === 'pack' ? 'pack' : 'node'; st.sp = null; render(); setHash(); return; }
   st.hist.pop(); var id = st.hist[st.hist.length - 1]; if (id) select(N[id], { back: true }); else select(null);
 });
 $('phome').addEventListener('click', function () { select(null); if (st.view === 'map') fitAll(); });
 $('pmin').addEventListener('click', function () { setMin(!st.min); });
-$('pack').addEventListener('click', function () { st.pane = 'pack'; if (st.min) setMin(false); render(); });
+$('pack').addEventListener('click', function () { st.pane = 'pack'; st.sp = null; if (st.min) setMin(false); render(); setHash(); });
 $('wander').addEventListener('click', wander);
 $('kid').addEventListener('click', function () { st.kid = !st.kid; this.setAttribute('aria-pressed', String(st.kid)); toast(st.kid ? 'Showing projects started by kids and teens' : 'Showing everything'); redraw(); });
 $('vmap').addEventListener('click', function () { setView('map'); });
@@ -2278,10 +2464,14 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !r
 
 /* ---------- boot ---------- */
 function fromHash(first) {
-  var id = decodeURIComponent((location.hash || '').slice(1)), n = N[id];
-  if (n) select(n, { ms: first ? 0 : undefined }); else if (!first && st.sel) select(null);
+  var id = decodeURIComponent((location.hash || '').slice(1)), parts = id.split('/'), n = N[parts[0]];
+  if (n) {
+    var k = parts.length > 1 ? parseInt(parts[1], 10) - 1 : -1;
+    if (!st.sel || st.sel.id !== n.id || st.pane === 'spark') { st.pane = 'node'; select(n, { ms: first ? 0 : undefined }); }
+    if (k >= 0 && sparkAt(n.id, k) != null) openSpark(n.id, k);
+  } else if (!first && st.sel) select(null);
 }
-window.addEventListener('hashchange', function () { if (settingHash) return; var id = (location.hash || '').slice(1); if ((st.sel ? st.sel.id : '') !== id) fromHash(false); });
+window.addEventListener('hashchange', function () { if (settingHash) return; var id = decodeURIComponent((location.hash || '').slice(1)); if (hashFor() !== id) fromHash(false); });
 readTheme(); buildContours(); bind(cv, false); bind(gv, true);
 render(); resize();
 cam.k = homeK; cam.x = (B.x0 + B.x1) / 2; cam.y = (B.y0 + B.y1) / 2;
