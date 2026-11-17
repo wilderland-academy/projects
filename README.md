@@ -1,7 +1,3 @@
-# Atlas of Sparks
+# Moved
 
-An explorable map of real projects people (many of them kids) started, with sparks for Wilderland students' passion projects.
-
-Live at https://projects.wilderland.academy
-
-Photos are from Wikimedia Commons; each story credits the photographer and license.
+This site now lives at https://explore.wilderland.academy/projects/ (repo: wilderland-academy/explore). This repo only redirects old links.
